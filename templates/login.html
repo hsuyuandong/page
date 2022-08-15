@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>coding kingdom</title>
+	<link href="http://127.0.0.1:9527/hui/login.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    
+    <div class="banner">
+        <h1>Coding kingdom  平台</h1>
+        <span id="showProdPage" class="tab active">課程列表</span>
+        <span id="showCartPage" class="tab">課程影音</span>
+        <span id="showInfoPage" class="tab">上傳作業</span>
+        <span id="showAdminPage" class="tab">成績</span>
+        <span id="showMessagePage" class="tab">留言板</span>
+    </div>
+    
+    <div class="container">
+
+        <!--======================課程列表======================-->
+        <p id="prodPage" class="page" class="border">急速開發中。。。</p>
+
+
+        <!--======================課程影音======================-->
+        <div id="cartPage" class="page">
+            <button>請點我簽到</button>
+            <strong><h3>Lesson1</h3></strong>
+            <span id="cartName"></span>
+            <strong><h2>認識網路爬蟲</h2></strong>
+            <br>
+			<video width="400" height="240" controls>
+			<source src="http://127.0.0.1:9527/hui/test.mp4" type="video/mp4" />
+			<source src="http://127.0.0.1:9527/hui/test.ogv" type="video/ogg" />
+			影片無法播放，請改用別的瀏覽器，或將影片
+			<a href="http://127.0.0.1:9527/hui/test.mp4">下載</a>後再播放。
+			</video>
+		
+		</div>
+    
+
+        <!--======================上傳作業======================-->
+        
+		<div id="infoPage" class="page">
+			<div class="infoPage">
+				<h2 class="left">Week1作業上傳區</h2>
+				<br>
+				<hr/>
+				<h4 class="left">本周作業講解：請寫出PY語言的四種變數<h4>
+				<br>
+				<form action="doAction.php" method="post" enctype="multipart/form-data"  class="left">
+				<!-- 限制上傳檔案的最大值 -->
+				<input type="hidden" name="MAX_FILE_SIZE" value="2097152">
+	 
+				<!-- accept 限制上傳檔案類型 -->
+				<input type="file" name="myFile" accept="image/jpeg,image/jpg,image/gif,image/png/.docx,.pdf,.pptx,.xlsx">
+	 
+				<input type="submit" value="上傳檔案">
+				</form>
+				
+			</div>
+			<br><br>
+			<div class="infoPage">
+				<h2 class="left">Week2作業上傳區</h2>
+				<br>
+				<hr/>
+				<h4 class="left">本周作業講解：請寫出PY語言的四種變數<h4>
+				<br>
+				<form action="doAction.php" method="post" enctype="multipart/form-data"  class="left">
+				<!-- 限制上傳檔案的最大值 -->
+				<input type="hidden" name="MAX_FILE_SIZE" value="2097152">
+	 
+				<!-- accept 限制上傳檔案類型 -->
+				<input type="file" name="myFile" accept="image/jpeg,image/jpg,image/gif,image/png/.docx,.pdf,.pptx,.xlsx">
+	 
+				<input type="submit" value="上傳檔案">
+				</form>
+			</div>
+        </div>
+		
+
+		
+
+
+        <!--======================成績======================-->
+        <p id="adminPage" class="page" class="border">急速開發中。。。</p>
+
+        <!--======================留言板======================-->
+		<p id="messagePage" class="page" class="border">123</p>
+		
+<script src="http://127.0.0.1:9527/hui/login.js"></script>
+</body>
+</html>
